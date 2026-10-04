@@ -1,0 +1,17 @@
+services:
+  tsfl:
+    build: .
+    container_name: TSFL
+    volumes:
+      - .:/root/shared/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    working_dir: /root/shared/workspace
+    tty: true

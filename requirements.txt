@@ -1,0 +1,15 @@
+# Specify Python version used for development Python 3.11.13
+# This is a recommendation, as pip does not enforce Python versions from requirements.txt directly.
+# For stricter environment control, consider tools like conda or pyenv.
+
+numpy==1.26.4
+transformers==4.53.2
+tqdm==4.67.1
+scipy==1.17.1
+scikit-learn==1.8.0
+matplotlib==3.10.3
+pandas==3.0.2
+seaborn==0.13.2
+torchmetrics==1.9.0
+pyod==3.6.0
+geom-median=0.1.0
